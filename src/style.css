@@ -37,6 +37,7 @@ h2 {
 .scoreSection ul {
   border: solid #141414 2px;
 }
+
 .scoreSection li {
   padding: 5px;
 }
@@ -64,7 +65,7 @@ form > button {
   height: 25px;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
 }
@@ -73,5 +74,3 @@ form > input {
   margin: 20px 0;
   height: 25px;
 }
-
-
