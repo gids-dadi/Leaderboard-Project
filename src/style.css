@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -42,7 +43,7 @@ h2 {
 }
 
 li:nth-child(even) {
-  background: #CCC;
+  background: #ccc;
 
 }
 
@@ -56,6 +57,11 @@ li:nth-child(even) {
   font-size: 35px;
 }
 
+form > button {
+  width: 50px;
+  align-self: flex-end;
+}
+
 .scoreHeader button {
   height: 25px;
 }
@@ -63,15 +69,11 @@ li:nth-child(even) {
 form{
   display: flex;
   flex-direction: column;
-
 }
 
 form > input {
-  margin: 20px 0px;
+  margin: 20px 0;
   height: 25px;
 }
 
-form  button {
-  width: 50px;
-  align-self: flex-end;
-}
+
