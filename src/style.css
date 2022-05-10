@@ -4,6 +4,7 @@
   margin: 0;
   list-style: none;
 }
+
 body {
   font-family: 'Oleo Script', cursive;
 }
@@ -23,6 +24,7 @@ h1 {
 h2 {
   font-size: 35px;
 }
+
 .scoreSection {
   display: flex;
   flex-direction: column;
