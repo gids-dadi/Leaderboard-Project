@@ -36,7 +36,6 @@ h2 {
 
 .scoreSection ul {
   border: solid #141414 2px;
-  
 }
 .scoreSection li {
   padding: 5px;
@@ -44,7 +43,6 @@ h2 {
 
 li:nth-child(even) {
   background: #ccc;
-
 }
 
 .scoreHeader {
