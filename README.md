@@ -2,7 +2,7 @@
 
 # Leaderboard-Project
 
-Leaderboard project to enter score of individuals -basic setup.
+Leaderboard project to enter scores of individuals -basic setup.
 
 
 ## Built With
