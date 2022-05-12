@@ -73,4 +73,7 @@ form {
 form > input {
   margin: 20px 0;
   height: 25px;
+  width: 25vw;
+  padding: 10px;
+  font-size: 20px;
 }
