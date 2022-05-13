@@ -10,7 +10,7 @@ const msg = document.querySelector('#msg');
 
 refBtn.addEventListener('click', async () => {
   const list = await getScores().then((result) => {
-    return result.result;
+    // return result.result;
   });
   renderScore(list);
 });
