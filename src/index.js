@@ -9,7 +9,7 @@ const form = document.querySelector('form');
 const msg = document.querySelector('#msg');
 
 refBtn.addEventListener('click', async () => {
-  const list = await getScores().then((result) => {
+  const list = await getScores().then(result => {
     return result.result;
   });
   renderScore(list);
