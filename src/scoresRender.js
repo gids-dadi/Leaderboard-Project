@@ -14,7 +14,7 @@ const renderScore = (list) => {
       li.innerHTML = `${score.user}: ${score.score}`;
       li.id = index;
 
-      scoreContainer.appendChild(li);
+      scoreContainer.append(li);
     });
 };
 
