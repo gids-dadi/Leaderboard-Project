@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import './style.css';
 
 import { getScores, postScore } from './scoresLoad';
@@ -10,9 +9,10 @@ const msg = document.querySelector('#msg');
 
 refBtn.addEventListener('click', async () => {
   const list = await getScores().then((result) => {
+     renderScore(list);
     return result.result;
   });
-  renderScore(list);
+  // renderScore(list);
 });
 
 form.addEventListener('submit', async (event) => {
@@ -27,7 +27,7 @@ form.addEventListener('submit', async (event) => {
   await postScore(score);
 
   setTimeout(() => {
-    msg.innerHTML = `"${score.score}" by "${score.user}" has been added, press Refresh to see`;
+    msg.innerHTML = `"${score.score}" by "${score.user}" has been added, press Refresh to see your entry`;
     setTimeout(() => {
       msg.innerHTML = '';
     }, 2000);

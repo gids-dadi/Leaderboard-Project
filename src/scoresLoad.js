@@ -1,4 +1,4 @@
-const gameID = 'Zl4d7IVkemOTTVg2fUdz';
+const gameID = 'RSRgo040GSWjFrJlWRw3';
 
 const postScore = async (score) => {
   const response = await fetch(

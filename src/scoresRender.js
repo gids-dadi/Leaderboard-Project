@@ -8,7 +8,7 @@ const renderScore = (list) => {
   }
 
   list
-    .sort((a, b) => b.score - a.score)
+    .sort(( ba,) => b.score - a.score)
     .forEach((score, index) => {
       const li = document.createElement('li');
       li.innerHTML = `${score.user}: ${score.score}`;
