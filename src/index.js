@@ -1,33 +1,31 @@
 import './style.css';
 
-import { getScores, postScore } from './scoresLoad';
+import { getScores, setScore } from './scoresLoad';
 import renderScore from './scoresRender';
 
-const refBtn = document.querySelector('#refresh');
+const refBtn = document.querySelector('.btn-refresh');
 const form = document.querySelector('form');
 const msg = document.querySelector('#msg');
 
 refBtn.addEventListener('click', async () => {
-  const list = await getScores().then((result) => {
-     renderScore(list);
-    return result.result;
-  });
-  // renderScore(list);
+  const list = await getScores();
+  renderScore(list);
 });
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
 
   const score = {
-    user: form.elements.user.value,
+    user: form.elements.username.value,
     score: form.elements.score.value,
   };
 
   form.reset();
-  await postScore(score);
+  await setScore(score);
 
   setTimeout(() => {
-    msg.innerHTML = `"${score.score}" by "${score.user}" has been added, press Refresh to see your entry`;
+    // msg.innerHTML = 'Your score has been added, press Refresh to see';
+    msg.innerHTML = `"${score.score}" by "${score.user}" has been added, press Refresh to see`;
     setTimeout(() => {
       msg.innerHTML = '';
     }, 2000);

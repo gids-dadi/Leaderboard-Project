@@ -1,25 +1,31 @@
-const gameID = 'RSRgo040GSWjFrJlWRw3';
+// const gameID = 'wOsYb1Y5nI0o14jdngET';
+const gameID = 'Zl4d7IVkemOTTVg2fUd';
 
-const postScore = async (score) => {
+const setScore = async (score) => {
   const response = await fetch(
     `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores`,
     {
       method: 'POST',
-      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(score),
-    },
+    }
   );
-  return response.json();
+
+  const { result } = await response.json();
+
+  return result;
 };
 
 const getScores = async () => {
   const response = await fetch(
-    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores`,
+    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores`
   );
-  return response.json();
+
+  const { result } = await response.json();
+
+  return result;
 };
 
-export { getScores, postScore };
+export { getScores, setScore };

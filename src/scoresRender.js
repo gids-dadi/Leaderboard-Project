@@ -1,5 +1,5 @@
 const renderScore = (list) => {
-  const scoreContainer = document.querySelector('#score-list');
+  const scoreContainer = document.querySelector('.score-list');
 
   scoreContainer.innerHTML = '';
   if (!list.length) {
@@ -8,7 +8,7 @@ const renderScore = (list) => {
   }
 
   list
-    .sort(( ba,) => b.score - a.score)
+    .sort((a, b) => b.score - a.score)
     .forEach((score, index) => {
       const li = document.createElement('li');
       li.innerHTML = `${score.user}: ${score.score}`;
