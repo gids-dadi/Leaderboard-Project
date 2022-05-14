@@ -10,7 +10,7 @@ const setScore = async (score) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(score),
-    }
+    },
   );
 
   const { result } = await response.json();
@@ -20,7 +20,7 @@ const setScore = async (score) => {
 
 const getScores = async () => {
   const response = await fetch(
-    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores`
+    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores`,
   );
 
   const { result } = await response.json();
