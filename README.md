@@ -2,7 +2,7 @@
 
 # Leaderboard-Project
 
-Leaderboard project to enter score of individuals -basic setup.
+Leaderboard project to enter score of individuals and have them arranged according to the rank of score.
 
 
 ## Built With
@@ -30,8 +30,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Gideon Dadi**
 
--Linkedin [@GideonDadi] (https://www.linkedin.com/feed/)
-
+-Linkedin [@GideonDadi](www.linkedin.com/in/gideon-akamisoko-dadi)
 - GitHub: [@gids_dadi](https://github.com/gids-dadi)
 - Twitter: [@Dadi_AG](https://twitter.com/Dadi_AG)
 
